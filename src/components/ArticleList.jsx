@@ -1,7 +1,6 @@
 import Article from "./Article"
 
-
-const ArticleList =({posts})=>{
+function ArticleList({posts}){
     return(
         <main>
            {posts.map((post) => { 
@@ -11,8 +10,8 @@ const ArticleList =({posts})=>{
            title={post.title} 
            date={post.date} 
            preview={post.preview}
+           minutes={post.minutes}
            />)})} 
-            {/* <MinutesToRead minutes={postList.minutes} /> */}
         </main>
     )
 }
